@@ -19,6 +19,9 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\SendWelcomeEmail',
             'App\Listeners\SendWelcomeAlert',
         ],
+        \App\Events\DeleteUser::class => [
+            \App\Listeners\SendDeleteAlert::class,
+        ],
     ];
 
     /**

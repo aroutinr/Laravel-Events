@@ -33,8 +33,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <a class="navbar-brand" href="{{ url('/') }}">
-                            Menu
+                        <a class="navbar-brand" href="{{ route('users.index') }}">
+                            Users
                         </a>
                         <a class="navbar-brand" href="{{ url('/') }}">
                             Menu
