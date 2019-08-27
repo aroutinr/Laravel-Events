@@ -83,7 +83,7 @@ class UsersController extends Controller
     public function destroy(Request $request, $id)
     {
     	$user = User::findOrFail($id);
-    	//$user->delete();
+    	$user->delete();
     	event(new DeleteUser($user));
 
     	return redirect('users');
